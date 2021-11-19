@@ -2,7 +2,7 @@
 
 **Task :**  Implement a method to identify the language a document is written in . 
 
-**Dataset Used** **:[**http://www.statmt.org/europarl/** ](http://www.statmt.org/europarl/)**
+**Dataset Used** **: [**http://www.statmt.org/europarl/** ](http://www.statmt.org/europarl/)**
 
 I cleaned the data, generated a csv file from each language corpus and then merged these csv files to create a single (multi-label) dataset, so that we can use it in the supervised training. 
 
