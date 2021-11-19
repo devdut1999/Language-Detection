@@ -22,7 +22,7 @@ I have implemented 2 models :
 
 	**F1 Score :** 99.7% 
 	
-	**epoch|  train\_loss|  valid\_loss|  accuracy|  time|** 
+	epoch|  train\_loss|  valid\_loss|  accuracy|  time
 	--|--|--|--|--
 	0| 3.174304|  3.174028|  0.991781| 35:04 
 	1| 3.174232|  3.174012|  0.993948| 35:08 
