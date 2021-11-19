@@ -22,6 +22,8 @@ I have implemented 2 models :
 
 	**F1 Score :** 99.7% 
 	
+	**Training the Model :**
+	
 	epoch|  train\_loss|  valid\_loss|  accuracy|  time
 	--|--|--|--|--
 	0| 3.174304|  3.174028|  0.991781| 35:04 
@@ -35,6 +37,5 @@ I have implemented 2 models :
 	8| 3.174258|  3.173986|  0.996451|  35:14 
 	9| 3.174238|  3.173986|  0.997149|  35:01 
 
-	-------Ending Training--------  
-
+	
 	
