@@ -64,10 +64,10 @@ I have implemented 2 models :
 	pl   |0.0000|0.0000|0.0000
 	sk   |0.0000|0.0000|0.0000
 	hu   |0.0000|0.0000|0.0000
-        avg / total|99.61%|99.80%|99.70%
+        Total|99.61%|99.80%|99.70%
 
     
-	**Accuracy:** 99.61%
+	**Accuracy :** 99.61%
     
 	Due to resource constraints, I was able to train the model for 10 epochs only. If we train the model for more number of epochs and tune the hyperparameters properly, 		we'll definitely obtain better results. 
 
