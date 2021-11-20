@@ -38,33 +38,33 @@ I have implemented 2 models :
 	9| 3.174238|  3.173986|  0.997149|  35:01 
 	
 	
-	**Validating Model :**
+	**Validating the Model :**
 
 	recall| precision|  f1-score
 	--|--|--|--
 	<OOV>|              0.9980|    1.0000|    0.9990
 	label|              0.0000|    0.0000|    0.0000   
-	en   |              0.9985|    0.9735|    0.9858
-	nl   |              0.3570|    0.0488|    0.0858 
-	da   |              0.0490|    0.0469|    0.0479 
-	sv   |              0.0280|    0.0504|    0.0360 
-	pt   |              0.0000|    0.0000|    0.0000 
-	es   |              0.0460|    0.0510|    0.0484 
-	it   |              0.3300|    0.0448|    0.0788 
-	fr   |              0.0000|    0.0000|    0.0000 
-	de   |              0.0760|    0.0560|    0.0645
-	el   |              0.0100|    0.0391|    0.0159 
-	bg   |              0.0958|    0.0522|    0.0676  
-	fi   |              0.0000|    0.0000|    0.0000 
-	cs   |              0.0020|    0.0153|    0.0035 
-	sl   |              0.0000|    0.0000|    0.0000 
-	lt   |              0.0000|    0.0000|    0.0000 
-	et   |              0.0000|    0.0000|    0.0000 
-	lv   |              0.0000|    0.0000|    0.0000 
-	ro   |              0.0000|    0.0000|    0.0000 
-	pl   |              0.0000|    0.0000|    0.0000 
-	sk   |              0.0000|    0.0000|    0.0000 
-	hu   |              0.0000|    0.0000|    0.0000  
+	en|              0.9985|    0.9735|    0.9858
+	nl|              0.3570|    0.0488|    0.0858 
+	da|              0.0490|    0.0469|    0.0479 
+	sv|              0.0280|    0.0504|    0.0360 
+	pt|              0.0000|    0.0000|    0.0000 
+	es|              0.0460|    0.0510|    0.0484 
+	it|              0.3300|    0.0448|    0.0788 
+	fr|              0.0000|    0.0000|    0.0000 
+	de|              0.0760|    0.0560|    0.0645
+	el|              0.0100|    0.0391|    0.0159 
+	bg|              0.0958|    0.0522|    0.0676  
+	fi|              0.0000|    0.0000|    0.0000 
+	cs|              0.0020|    0.0153|    0.0035 
+	sl|              0.0000|    0.0000|    0.0000 
+	lt|              0.0000|    0.0000|    0.0000 
+	et|              0.0000|    0.0000|    0.0000 
+	lv|              0.0000|    0.0000|    0.0000 
+	ro|              0.0000|    0.0000|    0.0000 
+	pl|              0.0000|    0.0000|    0.0000 
+	sk|              0.0000|    0.0000|    0.0000 
+	hu|              0.0000|    0.0000|    0.0000  
 	avg / total|        0.9961|    0.9980|    0.9970
 
     
@@ -80,7 +80,6 @@ I have implemented 2 models :
 2) **FastText Classifier Model :** 
 
 	FastText is another word embedding method that is an extension of the word2vec model. But, instead of learning vectors for words directly, fastText represents each word 	 as an n-gram of characters. This helps capture the meaning of shorter words and allows the embeddings to understand suffixes and prefixes. Once the word has been 		represented using character n- grams, a skip-gram model is trained to learn the embeddings. This model is considered to be a bag of words model with a sliding window 		over a word because no internal structure of the word is taken into account. As long as the characters are within this window, the order of the n-grams doesn’t matter.   
-
 	FastText also works well with rare words. So even if a word wasn’t seen during training, it can be broken down into n-grams to get its embeddings. 
 
 	**Reference :** [**https://fasttext.cc/docs/en/supervised-tutorial.html** ](https://fasttext.cc/docs/en/supervised-tutorial.html)
@@ -90,6 +89,7 @@ I have implemented 2 models :
 	1) a bin  file: this is the learned model which contains the optimized parameters for predicting the language label from a given text. 
 	2) a vec file : a text file that contains the learned vocabulary (around 1.8million) and their embeddings. 
 
+	
 	Using FastText, I obtain the following results on the **Validation** set : 
 
 	 **Precision** : 99% 
