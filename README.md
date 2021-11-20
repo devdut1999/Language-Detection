@@ -42,7 +42,7 @@ I have implemented 2 models :
 	
 	| recall| precision| f1-score
 	--|--|--|--
-	<OOV>| 0.9980| 1.0000| 0.9990
+	OOV| 0.9980| 1.0000| 0.9990
 	
 	label|0.0000|0.0000|0.0000
 	en   |0.9985|0.9735|0.9858
