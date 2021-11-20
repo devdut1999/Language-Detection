@@ -76,13 +76,15 @@ I have implemented 2 models :
 	For more details and to see the working of the model, please refer to : 
 	[**Language_detection_bi-lstm.ipynb**]	(https://colab.research.google.com/drive/1_k7elp9exYw9Nd3uYiXW5hqvI4ZuUdpa?usp=sharing)(The downloaded ipynb file has also been 	provided by me.) 
 
-	2) **FastText Classifier Model :** 
+2) **FastText Classifier Model :** 
 
 	FastText is another word embedding method that is an extension of the word2vec model. But, instead of learning vectors for words directly, fastText represents each word 	 as an n-gram of characters. This helps capture the meaning of shorter words and allows the embeddings to understand suffixes and prefixes. Once the word has been 		represented using character n- grams, a skip-gram model is trained to learn the embeddings. This model is considered to be a bag of words model with a sliding window 		over a word because no internal structure of the word is taken into account. As long as the characters are within this window, the order of the n-grams doesn’t matter.   
 
 	FastText also works well with rare words. So even if a word wasn’t seen during training, it can be broken down into n-grams to get its embeddings. 
 
-	**Reference :[ https://fasttext.cc/docs/en/supervised-tutorial.html** ](https://fasttext.cc/docs/en/supervised-tutorial.html)**FastText will generate two files during 		training: 
+	**Reference :[ https://fasttext.cc/docs/en/supervised-tutorial.html** ](https://fasttext.cc/docs/en/supervised-tutorial.html)
+	
+	FastText will generate two files during training: 
 
 	1) a bin  file: this is the learned model which contains the optimized parameters for predicting the language label from a given text. 
 	2) a vec file : a text file that contains the learned vocabulary (around 1.8million) and their embeddings. 
@@ -103,6 +105,6 @@ I have implemented 2 models :
     
 	**F1 Score** : 99.3% 
 
-	For more details and to see the working of the model, please refer to : [**Language_detection_fasttext.ipynb** ](https://colab.research.google.com/drive/1C5AZtwl4-		IDQaxvsGckPzxb-Eo3_nJPC?usp=sharing)(The downloaded ipynb file has also been provided by me.) 
+	For more details and to see the working of the model, please refer to : [**Language_detection_fasttext.ipynb**](https://colab.research.google.com/drive/1C5AZtwl4-		IDQaxvsGckPzxb-Eo3_nJPC?usp=sharing)
 
 	
