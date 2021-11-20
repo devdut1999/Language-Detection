@@ -40,10 +40,9 @@ I have implemented 2 models :
 	
 	**Validating the Model :**
 	
-	--|recall| precision| f1-score
+	label|recall| precision| f1-score
 	--|--|--|--
 	  OOV|0.9980|1.0000|0.9990
-	label|0.0000|0.0000|0.0000
 	en   |0.9985|0.9735|0.9858
 	nl   |0.3570|0.0488|0.0858
 	da   |0.0490|0.0469|0.0479
@@ -65,11 +64,10 @@ I have implemented 2 models :
 	pl   |0.0000|0.0000|0.0000
 	sk   |0.0000|0.0000|0.0000
 	hu   |0.0000|0.0000|0.0000
-        
-	avg / total|     0.9961|0.9980|0.9970
+        avg / total|99.61%|99.80%|99.70%
 
     
-	**Accuracy:** 0.9960656808142885 
+	**Accuracy:** 99.61%
     
 	Due to resource constraints, I was able to train the model for 10 epochs only. If we train the model for more number of epochs and tune the hyperparameters properly, 		we'll definitely obtain better results. 
 
