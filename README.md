@@ -39,18 +39,40 @@ I have implemented 2 models :
 
 	**Validating Model: **
 
-`       |recall| precision|  f1-score|   support ![](Aspose.Words.ddffd793-e52c-41a4-b4ef-b06d88c7e5b5.001.png)
-	--|--|--|
+		    |recall| precision|  f1-score
+	--   |	--     |--        |--
+	<OOV>|              0.9980|    1.0000|    0.9990
+	label|              0.0000|    0.0000|    0.0000   
+	en   |              0.9985|    0.9735|    0.9858
+	nl   |              0.3570|    0.0488|    0.0858 
+	da   |              0.0490|    0.0469|    0.0479 
+	sv   |              0.0280|    0.0504|    0.0360 
+	pt   |              0.0000|    0.0000|    0.0000 
+	es   |              0.0460|    0.0510|    0.0484 
+	it   |              0.3300|    0.0448|    0.0788 
+	fr   |              0.0000|    0.0000|    0.0000 
+	de   |              0.0760|    0.0560|    0.0645
+	el   |              0.0100|    0.0391|    0.0159 
+	bg   |              0.0958|    0.0522|    0.0676  
+	fi   |              0.0000|    0.0000|    0.0000 
+	cs   |              0.0020|    0.0153|    0.0035 
+	sl   |              0.0000|    0.0000|    0.0000 
+	lt   |              0.0000|    0.0000|    0.0000 
+	et   |              0.0000|    0.0000|    0.0000 
+	lv   |              0.0000|    0.0000|    0.0000 
+	ro   |              0.0000|    0.0000|    0.0000 
+	pl   |              0.0000|    0.0000|    0.0000 
+	sk   |              0.0000|    0.0000|    0.0000 
+	hu   |              0.0000|    0.0000|    0.0000  
+	avg / total|        0.9961|    0.9980|    0.9970
 
-<OOV>              0.9980    1.0000    0.999010372344.0000 label              0.0000    0.0000    0.0000    0.0000 en                 0.9985    0.9735    0.985820828.0000 nl                 0.3570    0.0488    0.0858 1000.0000 da                 0.0490    0.0469    0.0479 1000.0000 sv                 0.0280    0.0504    0.0360 1000.0000 pt                 0.0000    0.0000    0.0000 1000.0000 es                 0.0460    0.0510    0.0484 1000.0000 it                 0.3300    0.0448    0.0788 1000.0000 fr                 0.0000    0.0000    0.0000 1000.0000 de                 0.0760    0.0560    0.0645 1000.0000 el                 0.0100    0.0391    0.0159 1000.0000 bg                 0.0958    0.0522    0.0676  992.0000 fi                 0.0000    0.0000    0.0000 1000.0000 cs                 0.0020    0.0153    0.0035 1000.0000 sl                 0.0000    0.0000    0.0000 1000.0000 lt                 0.0000    0.0000    0.0000 1000.0000 et                 0.0000    0.0000    0.0000 1000.0000 lv                 0.0000    0.0000    0.0000 1000.0000 ro                 0.0000    0.0000    0.0000  979.0000 pl                 0.0000    0.0000    0.0000  928.0000 sk                 0.0000    0.0000    0.0000 1000.0000 hu                 0.0000    0.0000    0.0000  929.0000 ![](Aspose.Words.ddffd793-e52c-41a4-b4ef-b06d88c7e5b5.002.png)
+	**Accuracy: ** 0.9960656808142885 
+	Due to resource constraints, I was able to train the model for 10 epochs only. If we train the model for more number of epochs and tune the hyperparameters properly, we'll 	definitely obtain better results. 
 
-avg / total        0.9961    0.9980    0.997010414000.0000 Accuracy: 0.9960656808142885 ![](Aspose.Words.ddffd793-e52c-41a4-b4ef-b06d88c7e5b5.003.png)
+	Moreover, due to RAM constraints, I limited the maximum sentence length, on which the model is trained, to 500 (the maximum sentence length for the dataset is 15062). 			Nevertheless, the model was able to learn the structural composition of the words and phrases as well the dependencies between the words in a sentence and gave good results. 
 
-Due to resource constraints, I was able to train the model for 10 epochs only. If we train the model for more number of epochs and tune the hyperparameters properly, we'll definitely obtain better results. 
-
-Moreover, due to RAM constraints, I limited the maximum sentence length, on which the model is trained, to 500 (the maximum sentence length for the dataset is 15062). Nevertheless, the model was able to learn the structural composition of the words and phrases as well the dependencies between the words in a sentence and gave good results. 
-
-For more details and to see the working of the model, please refer to : [**Language_detection_bi-lstm.ipynb** ](https://colab.research.google.com/drive/1_k7elp9exYw9Nd3uYiXW5hqvI4ZuUdpa?usp=sharing)(The downloaded ipynb file has also been provided by me.) 
+	For more details and to see the working of the model, please refer to : 
+	[**Language_detection_bi-lstm.ipynb** ]	(https://colab.research.google.com/drive/1_k7elp9exYw9Nd3uYiXW5hqvI4ZuUdpa?usp=sharing)(The downloaded ipynb file has also been provided by me.) 
 
 2) **FastText Classifier Model :** 
 
