@@ -74,7 +74,7 @@ I have implemented 2 models :
 	Moreover, due to RAM constraints, I limited the maximum sentence length, on which the model is trained, to 500 (the maximum sentence length for the dataset is 15062). 		Nevertheless, the model was able to learn the structural composition of the words and phrases as well the dependencies between the words in a sentence and gave good 		results. 
 
 	For more details and to see the working of the model, please refer to : 
-	[**Language_detection_bi-lstm.ipynb**]	(https://colab.research.google.com/drive/1_k7elp9exYw9Nd3uYiXW5hqvI4ZuUdpa?usp=sharing)(The downloaded ipynb file has also been 	provided by me.) 
+	[**Language_detection_bi-lstm.ipynb**](https://colab.research.google.com/drive/1_k7elp9exYw9Nd3uYiXW5hqvI4ZuUdpa?usp=sharing)
 
 2) **FastText Classifier Model :** 
 
@@ -82,7 +82,7 @@ I have implemented 2 models :
 
 	FastText also works well with rare words. So even if a word wasn’t seen during training, it can be broken down into n-grams to get its embeddings. 
 
-	**Reference :[ https://fasttext.cc/docs/en/supervised-tutorial.html** ](https://fasttext.cc/docs/en/supervised-tutorial.html)
+	**Reference :** [**https://fasttext.cc/docs/en/supervised-tutorial.html** ](https://fasttext.cc/docs/en/supervised-tutorial.html)
 	
 	FastText will generate two files during training: 
 
