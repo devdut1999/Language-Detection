@@ -39,7 +39,7 @@ I have implemented 2 models :
 
 	**Validating Model: **
 
-	|recall| precision|  f1-score
+	recall| precision|  f1-score
 	--|--|--|--
 	<OOV>|              0.9980|    1.0000|    0.9990
 	label|              0.0000|    0.0000|    0.0000   
@@ -66,7 +66,9 @@ I have implemented 2 models :
 	hu   |              0.0000|    0.0000|    0.0000  
 	avg / total|        0.9961|    0.9980|    0.9970
 
-	**Accuracy: ** 0.9960656808142885 
+    
+	**Accuracy:** 0.9960656808142885 
+    
 	Due to resource constraints, I was able to train the model for 10 epochs only. If we train the model for more number of epochs and tune the hyperparameters properly, 		we'll definitely obtain better results. 
 
 	Moreover, due to RAM constraints, I limited the maximum sentence length, on which the model is trained, to 500 (the maximum sentence length for the dataset is 15062). 		Nevertheless, the model was able to learn the structural composition of the words and phrases as well the dependencies between the words in a sentence and gave good 		results. 
@@ -88,13 +90,17 @@ I have implemented 2 models :
 	Using FastText, I obtain the following results on the **Validation** set : 
 
 	 **Precision** : 99% 
+    
 	 **Recall** : 99% 
+    
 	 **F1 Score** : 99% 
 
 	and the following results on the **Test** set : 
 
 	**Precision** : 99.3% 
+    
 	**Recall** : 99.3% 
+    
 	**F1 Score** : 99.3% 
 
 	For more details and to see the working of the model, please refer to : [**Language_detection_fasttext.ipynb** ](https://colab.research.google.com/drive/1C5AZtwl4-		IDQaxvsGckPzxb-Eo3_nJPC?usp=sharing)(The downloaded ipynb file has also been provided by me.) 
