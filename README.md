@@ -36,8 +36,9 @@ I have implemented 2 models :
 	7| 3.174184|  3.173987|  0.994759|  35:24 
 	8| 3.174258|  3.173986|  0.996451|  35:14 
 	9| 3.174238|  3.173986|  0.997149|  35:01 
-
-	**Validating Model: **
+	
+	
+	**Validating Model :**
 
 	recall| precision|  f1-score
 	--|--|--|--
@@ -105,6 +106,7 @@ I have implemented 2 models :
     
 	**F1 Score** : 99.3% 
 
-	For more details and to see the working of the model, please refer to : [**Language_detection_fasttext.ipynb**](https://colab.research.google.com/drive/1C5AZtwl4-		IDQaxvsGckPzxb-Eo3_nJPC?usp=sharing)
+	For more details and to see the working of the model, please refer to : 
+	[**Language_detection_fasttext.ipynb**](https://colab.research.google.com/drive/1C5AZtwl4-IDQaxvsGckPzxb-Eo3_nJPC?usp=sharing)
 
 	
