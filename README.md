@@ -16,11 +16,11 @@ I have implemented 2 models :
 
 	Using the following model I obtain the following results on the **Validation** set : 
 
-	**Precison :** 99.8% 
+	**Precison	:** 99.8% 
 
-	**Recall     :** 99.6% 
+	**Recall	:** 99.6% 
 
-	**F1 Score :** 99.7% 
+	**F1 Score	:** 99.7% 
 	
 	**Training the Model :**
 	
@@ -64,10 +64,10 @@ I have implemented 2 models :
 	pl   |0.0000|0.0000|0.0000
 	sk   |0.0000|0.0000|0.0000
 	hu   |0.0000|0.0000|0.0000
-        Total|99.61%|99.80%|99.70%
+    Avg  |0.9961|0.9980|0.9970
 
     
-	**Accuracy :** 99.61%
+	**Accuracy	:** 99.61%
     
 	Due to resource constraints, I was able to train the model for 10 epochs only. If we train the model for more number of epochs and tune the hyperparameters properly, 		we'll definitely obtain better results. 
 
@@ -91,19 +91,19 @@ I have implemented 2 models :
 	
 	Using FastText, I obtain the following results on the **Validation** set : 
 
-	 **Precision** : 99% 
+	**Precision	:** 99% 
     
-	 **Recall** : 99% 
+	**Recall	:** 99% 
     
-	 **F1 Score** : 99% 
+	**F1 Score	:** 99% 
 
 	and the following results on the **Test** set : 
 
-	**Precision** : 99.3% 
+	**Precision :**  99.3% 
     
-	**Recall** : 99.3% 
+	**Recall	:**  99.3% 
     
-	**F1 Score** : 99.3% 
+	**F1 Score	:**  99.3% 
 
 	For more details and to see the working of the model, please refer to : 
 	[**Language_detection_fasttext.ipynb**](https://colab.research.google.com/drive/1C5AZtwl4-IDQaxvsGckPzxb-Eo3_nJPC?usp=sharing)
