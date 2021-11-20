@@ -39,8 +39,8 @@ I have implemented 2 models :
 
 	**Validating Model: **
 
-		    |recall| precision|  f1-score
-	--   |	--     |--        |--
+	|recall| precision|  f1-score
+	--|--|--|--
 	<OOV>|              0.9980|    1.0000|    0.9990
 	label|              0.0000|    0.0000|    0.0000   
 	en   |              0.9985|    0.9735|    0.9858
@@ -67,36 +67,36 @@ I have implemented 2 models :
 	avg / total|        0.9961|    0.9980|    0.9970
 
 	**Accuracy: ** 0.9960656808142885 
-	Due to resource constraints, I was able to train the model for 10 epochs only. If we train the model for more number of epochs and tune the hyperparameters properly, we'll 	definitely obtain better results. 
+	Due to resource constraints, I was able to train the model for 10 epochs only. If we train the model for more number of epochs and tune the hyperparameters properly, 		we'll definitely obtain better results. 
 
-	Moreover, due to RAM constraints, I limited the maximum sentence length, on which the model is trained, to 500 (the maximum sentence length for the dataset is 15062). 			Nevertheless, the model was able to learn the structural composition of the words and phrases as well the dependencies between the words in a sentence and gave good results. 
+	Moreover, due to RAM constraints, I limited the maximum sentence length, on which the model is trained, to 500 (the maximum sentence length for the dataset is 15062). 		Nevertheless, the model was able to learn the structural composition of the words and phrases as well the dependencies between the words in a sentence and gave good 		results. 
 
 	For more details and to see the working of the model, please refer to : 
-	[**Language_detection_bi-lstm.ipynb** ]	(https://colab.research.google.com/drive/1_k7elp9exYw9Nd3uYiXW5hqvI4ZuUdpa?usp=sharing)(The downloaded ipynb file has also been provided by me.) 
+	[**Language_detection_bi-lstm.ipynb**]	(https://colab.research.google.com/drive/1_k7elp9exYw9Nd3uYiXW5hqvI4ZuUdpa?usp=sharing)(The downloaded ipynb file has also been 	provided by me.) 
 
-2) **FastText Classifier Model :** 
+	2) **FastText Classifier Model :** 
 
-FastText is another word embedding method that is an extension of the word2vec model. But, instead of learning vectors for words directly, fastText represents each word as an n-gram of characters. This helps capture the meaning of shorter words and allows the embeddings to understand suffixes and prefixes. Once the word has been represented using character n- grams, a skip-gram model is trained to learn the embeddings. This model is considered to be a bag of words model with a sliding window over a word because no internal structure of the word is taken into account. As long as the characters are within this window, the order of the n-grams doesn’t matter.   
+	FastText is another word embedding method that is an extension of the word2vec model. But, instead of learning vectors for words directly, fastText represents each word 	 as an n-gram of characters. This helps capture the meaning of shorter words and allows the embeddings to understand suffixes and prefixes. Once the word has been 		represented using character n- grams, a skip-gram model is trained to learn the embeddings. This model is considered to be a bag of words model with a sliding window 		over a word because no internal structure of the word is taken into account. As long as the characters are within this window, the order of the n-grams doesn’t matter.   
 
-FastText also works well with rare words. So even if a word wasn’t seen during training, it can be broken down into n-grams to get its embeddings. 
+	FastText also works well with rare words. So even if a word wasn’t seen during training, it can be broken down into n-grams to get its embeddings. 
 
-**Reference :[ https://fasttext.cc/docs/en/supervised-tutorial.html** ](https://fasttext.cc/docs/en/supervised-tutorial.html)**FastText will generate two files during training: 
+	**Reference :[ https://fasttext.cc/docs/en/supervised-tutorial.html** ](https://fasttext.cc/docs/en/supervised-tutorial.html)**FastText will generate two files during 		training: 
 
-1) a bin  file: this is the learned model which contains the optimized parameters for predicting the language label from a given text. 
-1) a vec file : a text file that contains the learned vocabulary (around 1.8million) and their embeddings. 
+	1) a bin  file: this is the learned model which contains the optimized parameters for predicting the language label from a given text. 
+	2) a vec file : a text file that contains the learned vocabulary (around 1.8million) and their embeddings. 
 
-Using FastText, I obtain the following results on the **Validation** set : 
+	Using FastText, I obtain the following results on the **Validation** set : 
 
-- **Precision** : 99% 
-- **Recall** : 99% 
-- **F1 Score** : 99% 
+	 **Precision** : 99% 
+	 **Recall** : 99% 
+	 **F1 Score** : 99% 
 
-and the following results on the **Test** set : 
+	and the following results on the **Test** set : 
 
-- **Precision** : 99.3% 
-- **Recall** : 99.3% 
-- **F1 Score** : 99.3% 
+	**Precision** : 99.3% 
+	**Recall** : 99.3% 
+	**F1 Score** : 99.3% 
 
-For more details and to see the working of the model, please refer to : [**Language_detection_fasttext.ipynb** ](https://colab.research.google.com/drive/1C5AZtwl4-IDQaxvsGckPzxb-Eo3_nJPC?usp=sharing)(The downloaded ipynb file has also been provided by me.) 
+	For more details and to see the working of the model, please refer to : [**Language_detection_fasttext.ipynb** ](https://colab.research.google.com/drive/1C5AZtwl4-		IDQaxvsGckPzxb-Eo3_nJPC?usp=sharing)(The downloaded ipynb file has also been provided by me.) 
 
 	
