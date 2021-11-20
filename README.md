@@ -39,7 +39,7 @@ I have implemented 2 models :
 	
 	
 	**Validating the Model :**
-
+	
 	recall| precision|  f1-score
 	--|--|--|--
 	<OOV>|              0.9980|    1.0000|    0.9990
