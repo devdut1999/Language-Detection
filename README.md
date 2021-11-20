@@ -38,9 +38,7 @@ I have implemented 2 models :
 	9| 3.174238|  3.173986|  0.997149|  35:01 
 	
 	
-	**Validating the Model :**
-	
-	recall| precision|  f1-score
+	**Validating the Model :**recall| precision|  f1-score
 	--|--|--|--
 	<OOV>|              0.9980|    1.0000|    0.9990
 	label|              0.0000|    0.0000|    0.0000
